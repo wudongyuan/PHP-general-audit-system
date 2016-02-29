@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<!--引入wangEditor.css-->
+    <link rel="stylesheet" type="text/css" href="dist/css/wangEditor.css">
+</head>
+<body style='padding: 0 30px'>
+
+	<h3 style="text-align:center;">文章发布</h3>
+	<textarea id='textarea1' style='height:200px; max-height:800px; width:100%;'>
+		<blockquote style="color:#999; display:block; <!-- border-left: 5px solid #d0e5f2; --> padding:0 0 0 10px; margin:0; line-height:1.4; font-size: 100%;">
+			默认高度 200px，最大高度 400px
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		</blockquote>
+		<p><br></p>
+	</textarea>
+	<button style="width:1124px;";onclick="getHTML();">发布</button>
+	
+	<script type="text/javascript" src='dist/js/jquery-1.10.2.min.js'></script>
+	<script type="text/javascript" src='dist/js/wangEditor.min.js'></script>
+	<script type="text/javascript" src='src/js/wangEditor.js'></script>
+	<script type="text/javascript">
+		$(function(){
+			var editor = $('#textarea1').wangEditor();
+		});
+	</script>
+</body>
+</html>
